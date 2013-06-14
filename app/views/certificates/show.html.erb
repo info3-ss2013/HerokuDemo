@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brainsize:</strong>
+  <%= @certificate.brainsize %>
+</p>
+
+<p>
+  <strong>Iq:</strong>
+  <%= @certificate.iq %>
+</p>
+
+<p>
+  <strong>Hunger:</strong>
+  <%= @certificate.hunger %>
+</p>
+
+<%= link_to 'Edit', edit_certificate_path(@certificate) %> |
+<%= link_to 'Back', certificates_path %>

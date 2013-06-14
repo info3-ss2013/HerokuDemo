@@ -1,0 +1,31 @@
+<h1>Listing certificates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brainsize</th>
+      <th>Iq</th>
+      <th>Hunger</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @certificates.each do |certificate| %>
+      <tr>
+        <td><%= certificate.brainsize %></td>
+        <td><%= certificate.iq %></td>
+        <td><%= certificate.hunger %></td>
+        <td><%= link_to 'Show', certificate %></td>
+        <td><%= link_to 'Edit', edit_certificate_path(certificate) %></td>
+        <td><%= link_to 'Destroy', certificate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Certificate', new_certificate_path %>

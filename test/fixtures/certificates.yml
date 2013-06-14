@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brainsize: 1
+  iq: 1
+  hunger: false
+
+two:
+  brainsize: 1
+  iq: 1
+  hunger: false
